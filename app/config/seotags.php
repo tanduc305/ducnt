@@ -6,12 +6,6 @@ return array(
 		'description'=>'ログイン',
 		'h1_tag'=>'ログイン',
 	),
-    'mypage'=>array(
-		'title'=>'mypage',
-		'keyword'=>'mypage',
-		'description'=>'mypage',
-		'h1_tag'=>'mypage',
-	),
 	'mailsend'=>array(
 		'title'=>'会員登録',
 		'keyword'=>'会員登録',
@@ -29,11 +23,5 @@ return array(
 		'keyword'=>'パスワード再発行',
 		'description'=>'パスワード再発行',
 		'h1_tag'=>'パスワード再発行',
-	),
-    'index'=>array(
-		'title'=>'index page',
-		'keyword'=>'index_page',
-		'description'=>'index page',
-		'h1_tag'=>'index page',
 	),
 );

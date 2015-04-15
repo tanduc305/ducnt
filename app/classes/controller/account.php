@@ -14,11 +14,6 @@ class Controller_Account extends Controller_Base
 	 * @access  public
 	 * @return  Response
 	 */
-    public function action_mypage()
-    {
-        $this->set_view();
-		$this->set_seotags('mypage');
-    }
 	public function action_login()
 	{
 		$this->set_view();
@@ -45,14 +40,11 @@ class Controller_Account extends Controller_Base
 
 		// validation
 		$val = Biz_Model_Member_Validate::check('login');
-            
 		if ($val->run())
 		{
 			$ret = Biz_Model_Member_Validate::login($val);
 			if ($ret != null)
 			{
-                Session::set('email', $val->validated('email'));
-                Response::redirect('account/mypage');
 			}
 			else
 			{
@@ -70,13 +62,4 @@ class Controller_Account extends Controller_Base
 		// redirect input view
 		Response::redirect('account/login/');
 	}
-    public function action_logout()
-    {
-        $IDemail = Session::get('email','');
-        if(isset($IDemail) && $IDemail != '')
-        {
-            Session::delete('email');
-        }
-        Response::redirect('/');
-    }
 }

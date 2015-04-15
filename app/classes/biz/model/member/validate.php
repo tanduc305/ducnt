@@ -47,7 +47,6 @@ class Biz_Model_Member_Validate
 	public static function login($val)
 	{
 		$member = Biz_Model_Member_Select::find_by_email($val->validated('email'));
-
 		if ($member == null || $member->password != md5($val->validated('password')))
 		{
 			return null;

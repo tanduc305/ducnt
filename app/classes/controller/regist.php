@@ -14,11 +14,6 @@ class Controller_Regist extends Controller_Base
 	 * @access  public
 	 * @return  Response
 	 */
-    public function action_complete()
-    {
-        $this->set_view();
-		$this->set_seotags('mailsend');
-    }
 	public function action_mailsend()
 	{
 		$this->set_view();

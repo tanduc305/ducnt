@@ -22,6 +22,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-style: normal;
   font-weight: normal;
   outline: 0; }
+
 /* line 24, ../sass/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -94,32 +95,12 @@ table {
     width: 980px;
     min-height: 100px;
     margin: 10px auto;
+    padding: 30px 0px;
     background: #f2f1e9;
+    font-size: 50px;
     font-weight: bold;
     text-align: center; }
-.header_top{width: 100%; height: 40px; font-size: 14px;}
-.header_top a{color: #fff; font-weight: bold;}
-.header_top a:hover{color: #ffee90;}
-.header_top_right{float: right; display: inline;}
-.header_top_right div{display:inline-block; float: left;}
-.header_top_left{float: left;}
-.header_top_left div{display:inline-block; float: left;}
-.button_nomal{padding: 5px 10px;  background: #AAAAAA; color: #fff; margin: 5px;}
-.button_nomal a{color: #fff; font-weight: bold;}
-.button_nomal a:hover{color: #ffee90;}
-/*////////////*/
-.content_top{width: 980px;
-    min-height: 100px;
-    margin: 0 auto;
-    font-weight: bold;
-    border: solid 1px #CCC;
-    text-align: center; padding: 40px 0;}
-.content_search{width: 550px; margin: 0 auto; height: 150px; background: #EEE; display: block;}
-.content_search_top{width: 100%;}
-.content_search_top .button_nomal{float: left; display: inline; margin-right: 40px!important;}
-.content_search_bottom{width: 100%;margin-top: 20px; }
-.content_search_bottom .content_search2{float: left; display: inline; padding: 5px 10px; display: block; margin: 5px; width: 350px;}
-.content_search_bottom #form_btnsearch{margin: 5px; padding: 2px 10px; }
+
 /* line 87, ../sass/style.scss */
 #ft {
   width: 100%; }
@@ -185,6 +166,7 @@ div#topicPath {
 table {
   width: 100%;
   margin: 20px 0;
+  border: 1px solid #D9D9D9;
   border-collapse: collapse;
   word-wrap: break-word; }
   /* line 149, ../sass/style.scss */
@@ -197,11 +179,14 @@ table {
     background: #eeece1;
     font-weight: bold; }
   /* line 158, ../sass/style.scss */
-  table th, table td {padding: 5px 5px;}
+  table th, table td {
+    text-align: left;
+    padding: 5px 5px;
+    border: 1px solid #D9D9D9; }
 
 /* line 166, ../sass/style.scss */
 table.resultTable tr:nth-child(odd) td {
-  background-color: #fff;
+  background-color: #f2f2f2;
   /* äÔêîçsÇÃîwåiêF */ }
 /* line 169, ../sass/style.scss */
 table.resultTable td ul li {
@@ -210,13 +195,7 @@ table.resultTable td ul li {
   border: 1px solid #ccc;
   background: #fff;
   font-size: 10px; }
-.wraptable{border: 1px solid #D9D9D9; width: 602px; padding: 20px 10px; display: block; margin: 0 auto;}
-table.refineTable{background: #FFF;}
-.btn_regist{background: #FF0066; width: 140px; padding: 7px; color: white; font-weight: bold;}
-.btn_facebook{background: #003366; width: 140px; padding: 7px; color: white; font-weight: bold;}
-table.refineTable tr td{text-align: center; width: 600px;}
-table.refineTable tr td input{padding: 4px 10px; border-radius: 5px; border: solid 1px #DDDDDD;}
-.text400{width: 400px;}
+
 /* line 178, ../sass/style.scss */
 table.refineTable th {
   width: 200px; }
